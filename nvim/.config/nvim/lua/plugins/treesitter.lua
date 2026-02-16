@@ -18,7 +18,6 @@ return {
 		vim.defer_fn(function()
 			require("nvim-treesitter.configs").setup({
 				ensure_installed = {
-					"templ",
 					"c",
 					"cpp",
 					"lua",
@@ -36,10 +35,9 @@ return {
 					"bash",
 					"markdown",
 					"markdown_inline",
-					"latex",
 				},
 
-				-- Autoinstall languages that are not installed. Defaults to false (but you can change for yourself!)
+				-- Autoinstall languages that are not installed.
 				auto_install = true,
 
 				highlight = { enable = true },
